@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "CookMate AI",
+    "slug": "cookmate-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "cookmate",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0F"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png",
+      "name": "CookMate AI",
+      "shortName": "CookMate",
+      "description": "Scan ingredients. Get AI recipes instantly.",
+      "themeColor": "#FF6B35",
+      "backgroundColor": "#0A0A0F"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "CookMate needs camera to scan your ingredients."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "CookMate needs photos to scan ingredients from your gallery."
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A0F"
+      },
+      "package": "com.cookmate.ai",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cookmate.ai"
+    }
+  }
+}
