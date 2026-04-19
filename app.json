@@ -57,6 +57,12 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.cookmate.ai"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "5d0bec84-2626-4de2-b349-257bf47924f9"
+      }
     }
   }
 }
