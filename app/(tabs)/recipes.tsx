@@ -112,7 +112,7 @@ export default function RecipesScreen() {
           <View style={[styles.px, { marginBottom: S.base }]}>
             <View style={styles.aiNote}>
               <Text style={{ fontSize:16 }}>✨</Text>
-              <Text style={styles.aiNoteText}>Generated from your {pantry.length} pantry items · Personalised for {userPrefs.servings} people</Text>
+              <Text style={styles.aiNoteText}>Generated from your {pantry.length} pantry items · Personalised for {servings} people</Text>
             </View>
           </View>
         )}

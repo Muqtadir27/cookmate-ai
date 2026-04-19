@@ -114,8 +114,8 @@ export default function ScanScreen() {
       '✅ Added to Pantry!',
       `${items.length} ingredients saved. Now generate recipes!`,
       [
-        { text: 'Generate Recipes ✨', onPress: () => router.push('/(tabs)/recipes') },
-        { text: 'Keep Adding', style: 'cancel', onPress: () => setItems([]) },
+        { text: 'Go to Pantry ✨', onPress: () => router.push('/(tabs)/pantry') },
+        { text: 'Add More', style: 'cancel', onPress: () => setItems([]) },
       ]
     )
   }
@@ -231,7 +231,7 @@ export default function ScanScreen() {
         <View style={[styles.stickyBar, { paddingBottom: insets.bottom + 8 }]}>
           <TouchableOpacity style={styles.pantryBtn} onPress={handleAddToPantry} activeOpacity={0.88}>
             <Text style={{ fontSize: 20 }}>🧺</Text>
-            <Text style={styles.pantryBtnText}>Add {items.length} to Pantry → Generate Recipes</Text>
+            <Text style={styles.pantryBtnText}>Add {items.length} to Pantry → Go to Pantry</Text>
           </TouchableOpacity>
         </View>
       )}
